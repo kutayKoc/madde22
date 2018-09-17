@@ -16,5 +16,8 @@ app.use('/public',express.static(path.join(__dirname,'public')));
 //projemizin daha düzenli olması için yönlendiricimizi başka dosyada çalıştırıyoruz
 require('./app_server/routes/routeManager')(app);
 //uygulamamızın çalıştırılacağı url ve port
-app.listen(8080,'127.0.0.1')
+var server = app.listen(process.env.PORT || 5000, function () {
+    var port = server.address().port;
+    console.log("Express is working on port " + port);
+  });
 console.log("app running")
