@@ -1,10 +1,10 @@
 var mongoose=require('mongoose');
 mongoose.Promise=require('bluebird');
 //veritabanına bağlanmak için
-mongoose.connect('mongodb://ds159812.mlab.com:59812/madde22', {
+mongoose.connect('mongodb://url/database', {
     auth: {
-      user: 'kutaykoc',
-      password: 'kutay2828'
+      user: 'username',
+      password: 'password'
     },
     useNewUrlParser:true
   })
