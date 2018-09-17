@@ -1,0 +1,469 @@
+<h1>Api Dökümantasyon</h1>
+<p>domain kısımına heroku domaini gelecek</p>
+<div class="main col-sm-12">
+    <div class="left col-sm-4">
+            <table>
+                <tr>
+                    <th>METHOD</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>http://domain.com/api/shows</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>PARAMETRE</th>
+                    <th>GEREKLİLİK</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>-</td>
+                </tr>
+            </table>
+    </div>
+    <div class="right col-sm-8">
+        <pre>
+        <code>
+{
+    "_id" : ObjectId("5ba004494c5ff916d057d404"),
+    "schedule" : {
+        "days" : [ 
+            "Thursday"
+        ],
+        "time" : "22:00"
+    },
+    "rating" : {
+        "average" : 6.5
+    },
+    "network" : {
+        "country" : {
+            "name" : "United States",
+            "code" : "US",
+            "timezone" : "America/New_York"
+        },
+        "id" : 2,
+        "name" : "CBS"
+    },
+    "externals" : {
+        "tvrage" : 25988,
+        "thetvdb" : 264492,
+        "imdb" : "tt1553656"
+    },
+    "image" : {
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg",
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/0/1.jpg"
+    },
+    "_links" : {
+        "self" : {
+            "href" : "http://api.tvmaze.com/shows/1"
+        },
+        "previousepisode" : {
+            "href" : "http://api.tvmaze.com/episodes/185054"
+        }
+    },
+    "genres" : [ 
+        "Drama", 
+        "Science-Fiction", 
+        "Thriller"
+    ],
+    "id" : 1,
+    "url" : "http://www.tvmaze.com/shows/1/under-the-dome",
+    "name" : "Under the Dome",
+    "type" : "Scripted",
+    "language" : "English",
+    "status" : "Ended",
+    "runtime" : 60,
+    "premiered" : "2013-06-24",
+    "weight" : 91,
+    "webChannel" : null,
+    "summary" : "<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+    "updated" : 1529612668,
+    "__v" : 0
+}
+        </code>
+        </pre>
+    </div>
+</div>
+
+<div class="main col-sm-12">
+    <div class="left col-sm-4">
+        <table>
+                <tr>
+                    <th>METHOD</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>http://domain.com/api/shows/1</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>PARAMETRE</th>
+                    <th>GEREKLİLİK</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>gerekli</td>
+                </tr>
+            </table>
+    <br>
+    </div>
+    <div class="right col-sm-8">
+        <pre>
+            <code>
+{
+    "_id" : ObjectId("5ba004494c5ff916d057d404"),
+    "schedule" : {
+        "days" : [ 
+            "Thursday"
+        ],
+        "time" : "22:00"
+    },
+    "rating" : {
+        "average" : 6.5
+    },
+    "network" : {
+        "country" : {
+            "name" : "United States",
+            "code" : "US",
+            "timezone" : "America/New_York"
+        },
+        "id" : 2,
+        "name" : "CBS"
+    },
+    "externals" : {
+        "tvrage" : 25988,
+        "thetvdb" : 264492,
+        "imdb" : "tt1553656"
+    },
+    "image" : {
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/0/1.jpg",
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/0/1.jpg"
+    },
+    "_links" : {
+        "self" : {
+            "href" : "http://api.tvmaze.com/shows/1"
+        },
+        "previousepisode" : {
+            "href" : "http://api.tvmaze.com/episodes/185054"
+        }
+    },
+    "genres" : [ 
+        "Drama", 
+        "Science-Fiction", 
+        "Thriller"
+    ],
+    "id" : 1,
+    "url" : "http://www.tvmaze.com/shows/1/under-the-dome",
+    "name" : "Under the Dome",
+    "type" : "Scripted",
+    "language" : "English",
+    "status" : "Ended",
+    "runtime" : 60,
+    "premiered" : "2013-06-24",
+    "weight" : 91,
+    "webChannel" : null,
+    "summary" : "<p><b>Under the Dome</b> is the story of a small town that is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. The town's inhabitants must deal with surviving the post-apocalyptic conditions while searching for answers about the dome, where it came from and if and when it will go away.</p>",
+    "updated" : 1529612668,
+    "__v" : 0
+}
+            </code>
+        </pre>
+    </div>
+</div>
+
+<div class="main col-sm-12">
+    <div class="left col-sm-4">
+        <div class="inLeft col-sm-12">
+            <table>
+                <tr>
+                    <th>METHOD</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>GET</td>
+                    <td>http://domain.com/api/shows/list</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>PARAMETRE</th>
+                    <th>GEREKLİLİK</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+    <br>
+    </div>
+    <div class="right col-sm-8">
+        <pre>
+            <code>
+{
+    "_id": "5b9f9e190683a2b8490cd4a2",
+    "id": 249,
+    "name": "The Daily Show with Jon Stewart",
+    "image": {
+        "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/1/4598.jpg",
+        "original": "http://static.tvmaze.com/uploads/images/original_untouched/1/4598.jpg"
+    }
+},
+            </code>
+        </pre>
+    </div>
+</div>
+
+<div class="main col-sm-12">
+    <div class="left col-sm-4">
+        <div class="inLeft col-sm-12">
+            <table>
+                <tr>
+                    <th>METHOD</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>PUT</td>
+                    <td>http://domain.com/api/shows/1</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>PARAMETRE</th>
+                    <th>GEREKLİLİK</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>gerekli</td>
+                </tr>
+            </table>
+        </div>
+    <br>
+    </div>
+    <div class="right col-sm-8">
+        <pre>
+            <code>
+{
+    "n": 1,
+    "nModified": 1,
+    "opTime": {
+        "ts": "6602268639884214273",
+        "t": 1
+    },
+    "electionId": "7fffffff0000000000000001",
+    "ok": 1,
+    "operationTime": "6602268639884214273",
+    "$clusterTime": {
+        "clusterTime": "6602268639884214273",
+        "signature": {
+            "hash": "D1+DNmVxmr8l0DKQJ9VdPAuJpNc=",
+            "keyId": "6601884948980826113"
+        }
+    }
+}
+            </code>
+        </pre>
+    </div>
+</div>
+
+
+<div class="main col-sm-12">
+    <div class="left col-sm-4">
+        <div class="inLeft col-sm-12">
+            <table>
+                <tr>
+                    <th>METHOD</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>DELETE</td>
+                    <td>http://domain.com/api/shows/1</td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <th>PARAMETRE</th>
+                    <th>GEREKLİLİK</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>gerekli</td>
+                </tr>
+            </table>
+        </div>
+    <br>
+    </div>
+    <div class="right col-sm-8">
+        <pre>
+            <code>
+{
+    "n": 1,
+    "opTime": {
+        "ts": "6602268983481597953",
+        "t": 1
+    },
+    "electionId": "7fffffff0000000000000001",
+    "ok": 1,
+    "operationTime": "6602268983481597953",
+    "$clusterTime": {
+        "clusterTime": "6602268983481597953",
+        "signature": {
+            "hash": "gPPgta48lVDuXRXLu4abOZLRP90=",
+            "keyId": "6601884948980826113"
+        }
+    }
+}    
+            </code>
+        </pre>
+    </div>
+</div>
+
+<div class="main col-sm-12">
+    <div class="left col-sm-4">
+        <div class="inLeft col-sm-12">
+            <table>
+                <tr>
+                    <th>METHOD</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>http://domain.com/api/shows/insertData</td>
+                </tr>
+            </table>
+            <br>
+            <h3>Post Edilecek Alanlar</h3>
+            <pre>
+                <code>
+{
+    id:Number,
+    url:String,
+    name:String,
+    type:String,
+    language:String,
+    genres:[{
+        type: String
+    }],
+    status:String,
+    runtime:Number,
+    premiered:String,
+    officalSite:String,
+    schedule:{
+        time:String,
+        days:[{
+            type: String
+        }],
+    },
+    rating:{
+        average:Number,
+    },
+    weight:Number,
+    network:{
+        id:Number,
+        name:String,
+        country:{
+            name:String,
+            code:String,
+            timezone:String
+        }
+    },
+    webChannel:String,
+    externals:{
+        tvrage:Number,
+        thetvdb:Number,
+        imdb:String
+    },
+    image:{
+        medium:String,
+        original:String
+    },
+    summary:String,
+    updated:Number,
+    _links:{
+        self:{
+            href:String
+        },
+        previousepisode:{
+            href:String
+        }
+    }
+}
+                </code>
+            </pre>  
+        </div>
+    <br>
+    </div>
+    <div class="right col-sm-8">
+        <pre>
+            <code>
+{
+    "_id" : ObjectId("5b9f9e190683a2b8490cd3bb"),
+    "id" : 7,
+    "url" : "http://www.tvmaze.com/shows/7/homeland",
+    "name" : "Homeland",
+    "type" : "Scripted",
+    "language" : "English",
+    "genres" : [ 
+        "Drama", 
+        "Thriller", 
+        "Espionage"
+    ],
+    "status" : "Running",
+    "runtime" : 60,
+    "premiered" : "2011-10-02",
+    "officialSite" : "http://www.sho.com/sho/homeland/home",
+    "schedule" : {
+        "time" : "21:00",
+        "days" : [ 
+            "Sunday"
+        ]
+    },
+    "rating" : {
+        "average" : 8.3
+    },
+    "weight" : 98,
+    "network" : {
+        "id" : 9,
+        "name" : "Showtime",
+        "country" : {
+            "name" : "United States",
+            "code" : "US",
+            "timezone" : "America/New_York"
+        }
+    },
+    "webChannel" : null,
+    "externals" : {
+        "tvrage" : 27811,
+        "thetvdb" : 247897,
+        "imdb" : "tt1796960"
+    },
+    "image" : {
+        "medium" : "http://static.tvmaze.com/uploads/images/medium_portrait/143/359279.jpg",
+        "original" : "http://static.tvmaze.com/uploads/images/original_untouched/143/359279.jpg"
+    },
+    "summary" : "<p>The winner of 6 Emmy Awards including Outstanding Drama Series, <b>Homeland</b> is an edge-of-your-seat sensation. Marine Sergeant Nicholas Brody is both a decorated hero and a serious threat. CIA officer Carrie Mathison is tops in her field despite being bipolar. The delicate dance these two complex characters perform, built on lies, suspicion, and desire, is at the heart of this gripping, emotional thriller in which nothing short of the fate of our nation is at stake.</p>",
+    "updated" : 1533619895,
+    "_links" : {
+        "self" : {
+            "href" : "http://api.tvmaze.com/shows/7"
+        },
+        "previousepisode" : {
+            "href" : "http://api.tvmaze.com/episodes/1420861"
+        }
+    }
+}  
+            </code>
+        </pre>
+    </div>
+</div>
+
+
